@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import { routeNames } from "./Constants/routes";
+import SplashScene from "./Scenes/splashScene";
+import HomeScene from "./Scenes/homeScene";
+import PlayerScene from "./Scenes/playerScene";
+
+import "./App.css";
+import { AuthContextProvider } from "./Contexts/AuthContext";
+
+import Message404 from "./Components/Message404";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AuthContextProvider>
+        <Routes>
+          <Route path={routeNames.splash} element={<SplashScene />} />
+          <Route path={routeNames.home} element={<HomeScene />} />
+          <Route path={routeNames.player} element={<PlayerScene />} />
+          <Route path={"*"} element={<Message404 />} />
+        </Routes>
+      </AuthContextProvider>
     </div>
   );
 }

@@ -1,3 +1,9 @@
+@import "~antd/dist/antd.min.css";
+
+.customheader.layout-header-background {
+  background-color: darkgreen;
+}
+
 .App {
   text-align: center;
 }
@@ -26,6 +32,30 @@
 
 .App-link {
   color: #61dafb;
+}
+
+/* width */
+::-webkit-scrollbar {
+  transition: all 0.3s;
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #88888866;
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 @keyframes App-logo-spin {

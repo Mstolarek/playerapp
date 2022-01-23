@@ -1,0 +1,25 @@
+.layout {
+  height: 100% !important;
+  min-height: 100vh !important;
+  overflow: auto !important;
+}
+
+.header {
+  background: url("https://live-production.wcms.abc-cdn.net.au/79e863dca990581b6e03fc03e9c0484b?impolicy=wcms_crop_resize&cropH=546&cropW=970&xPos=0&yPos=108&width=862&height=485") !important;
+  border-radius: 0 0 85% 85% / 30% !important;
+  text-align: center !important;
+}
+
+.backIcon {
+  position: absolute;
+  font-size: 40px;
+  top: 10px;
+  left: 50px;
+  color: white !important;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px black;
+}
+
+.content {
+  margin: 20px !important;
+}

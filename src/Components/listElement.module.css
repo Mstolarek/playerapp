@@ -1,0 +1,38 @@
+.content {
+  transition: all 0.6s;
+  position: relative;
+  border-radius: 35px;
+  margin: 5px;
+}
+.content:hover {
+  transform: scale(1.1) translateY(-10px);
+}
+.content:active {
+  transform: scale(0.9);
+}
+.text {
+  z-index: 10;
+  bottom: 12px;
+  left: 4px;
+  color: white !important;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px black;
+  position: absolute;
+  font-size: 24px;
+}
+
+.content:after {
+  content: "";
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  background: linear-gradient(45deg, #000000d9, transparent 90%);
+}
+
+.image {
+  border-radius: 8px;
+}

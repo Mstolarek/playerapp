@@ -1,0 +1,11 @@
+.list {
+  list-style-type: none;
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  overflow: scroll;
+  padding: 16px 0px;
+}
+.listElement {
+  margin-right: 20px;
+}
